@@ -1,3 +1,11 @@
-<h1>
-  {{title}}
-</h1>
+<app-header (featureSelected)="onNavigate($event)"></app-header>
+<div class="container">
+  <div clas="row">
+    <div class="col-md-12"></div>
+  </div>
+</div>
+<app-view-books *ngIf="loadedFeature ==='bookview'"></app-view-books>
+<app-upload-books *ngIf="loadedFeature !=='bookview'"></app-upload-books>
+<app-delete-books *ngIf="loadedFeature==='bookview'"></app-delete-books>
+
+
