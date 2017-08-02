@@ -1,0 +1,51 @@
+<!--<div class="row">
+<div class="col-xs-6">
+  <div class="bg-info panel">
+    <hr>
+    <ul class="lis-group">
+      <ul class="list-group-item"
+         style="..." *ngFor="let bkview of bookview">
+        {{bkview.title}}{{bkview.author}}{{bkview.price}}
+      </ul>
+    </ul>
+  </div>
+</div>
+</div>-->
+<!--<p>hello</p>-->
+
+
+<div class="row panel panel-info">
+  <div class="col-xs-6 ">
+    <p>BOOK DETAILS</p>
+    <hr>
+    <div class="bg-info " *ngFor="let bkview of bookview">
+      <span class="pull-right">
+        <img [src]="bkview.image" alt="" class="img-responsive img-square "
+             style="max-height: 300px">
+      <div class="col-xs-6">
+        <br>
+        <br>
+        Title:<b>{{bkview.title}}</b>
+        <br>
+        <br> Author:<b>{{bkview.author}}</b>
+        <br>
+        <br>Price:<b>{{bkview.price}}</b>
+        <br>
+      </div>
+        </span>
+    </div>
+  </div>
+</div>
+
+<!--<a href="#" class="list-group-item  clearfix" (click)="getRecipeInfo(recipeitem)">
+    <span class="pull-left">
+      <h4 class="list-group-item-heading">{{recipeitem.name}}</h4>
+      <p class="list-group-item-text">{{recipeitem.description}}</p>
+    </span>
+  <span class="pull-right">
+      <img [src]="recipeitem.imagePath" class="img-responsive" style="max-height: 50px;">
+    </span>-->
+
+
+
+

@@ -1,0 +1,35 @@
+<br>
+<form (ngSubmit)="onAddBook(f)" #f="ngForm">
+  <div class="col-xs-6">
+    <p>Add new book </p>
+    <!-- <input type="text" class="form-control" [(ngModel)]="newBookName">-->
+
+    <hr>
+    Title:<input type="text" class="form-control" id="title" name="title" ngModel required>
+    <br>
+    Author:<input type="text" class="form-control" id="author "name="author" ngModel required>
+    <br>
+    Price:<input type="text" class="form-control" name="price" id="price" ngModel required>
+    <br>
+    ImagePath:<input type="text" class="form-control" name="imagepath" id="imagepath" ngModel required>
+    <br>
+    <button
+      class="btn btn-success"
+      type="submit">
+      Upload
+    </button>
+
+  </div>
+</form>
+<!--  comment because it is required in view component-->
+<!--<div class="col-xs-6">
+  <button class="btn btn-primary" (click)="get()">GetDetails</button>
+  <br><br><br>
+  <div class="bg-info panel" *ngFor="let bkdetails of inputdata">{{bkdetails.title}}
+    <br> {{bkdetails.author}}
+    <br>{{bkdetails.price}}
+  </div>
+</div>-->
+
+
+
