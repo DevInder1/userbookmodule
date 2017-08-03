@@ -1,7 +1,7 @@
-import {Component, ElementRef, OnInit} from '@angular/core';
-import {Bookdata} from '../../shared/book-data.service';
+import {Component, OnInit} from '@angular/core';
+import {Bookdata} from '../../shared/book-model';
 import {NgForm} from '@angular/forms';
-import {Bookdetails} from "../../shared/bookdetails.service";
+import {Bookdetails} from '../../shared/services/bookdetails.service';
 
 @Component({
   selector: 'app-upload-books',
@@ -17,7 +17,7 @@ export class UploadBooksComponent implements OnInit {
   }
 
   onAddBook(form: NgForm) {
-    console.log(form.value)
+    console.log(form.value);
     console.log('book is added');
     const bktitle = form.value.title;
     const bkauthor = form.value.author;

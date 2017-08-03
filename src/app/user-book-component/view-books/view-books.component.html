@@ -13,12 +13,12 @@
 </div>-->
 <!--<p>hello</p>-->
 
-
+<br>
 <div class="row panel panel-info">
   <div class="col-xs-6 ">
     <p>BOOK DETAILS</p>
     <hr>
-    <div class="bg-info " *ngFor="let bkview of bookview">
+    <div class="bg-info " *ngFor="let bkview of bookview | filter:recievedText:'author' ">
       <span class="pull-right">
         <img [src]="bkview.image" alt="" class="img-responsive img-square "
              style="max-height: 300px">

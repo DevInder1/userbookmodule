@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import {Bookdetails} from "./shared/bookdetails.service";
-import {Bookdata} from "./shared/book-data.service";
+import {Bookdetails} from "./shared/services/bookdetails.service";
+import {Bookdata} from "./shared/book-model";
 
 @Component({
   selector: 'app-root',

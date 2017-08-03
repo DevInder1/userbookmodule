@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {SearchService} from '../../shared/services/search.service';
 
 @Component({
   selector: 'app-search-books',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search-books.component.css']
 })
 export class SearchBooksComponent implements OnInit {
+  filterData: string;
 
-  constructor() { }
+  constructor(private searchservice: SearchService) { }
 
   ngOnInit() {
+  }
+  Onserch() {
+    this.searchservice.searchValue.next(this.filterData);
+    console.log(this.filterData);
   }
 
 }
