@@ -1,4 +1,4 @@
-///<reference path="../../../node_modules/@types/node/index.d.ts"/>
+///<reference path='../../../node_modules/@types/node/index.d.ts'/>
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {UserButtonComponent} from './user-button/user-button.component';
@@ -14,8 +14,11 @@ import {FormsModule} from '@angular/forms';
 import {BrowserModule} from '@angular/platform-browser';
 import {Bookdetails} from '../shared/services/bookdetails.service';
 import {SearchService} from '../shared/services/search.service';
-import { NvD3Component } from 'ng2-nvd3';
+
 import { ChartModule } from 'angular2-highcharts';
+import {Ngd3Component} from '../ngd3/ngd3.component';
+import {NvD3Module} from 'ng2-nvd3/build';
+import {RoutingModule} from '../routing.module';
 
 
 @NgModule({
@@ -25,6 +28,8 @@ import { ChartModule } from 'angular2-highcharts';
     FormsModule,
     HttpModule,
     ChartModule.forRoot(require('highcharts')),
+    RoutingModule,
+    NvD3Module,
 
   ],
   declarations: [
@@ -36,7 +41,8 @@ import { ChartModule } from 'angular2-highcharts';
     DeleteBooksComponent,
     SearchBooksComponent,
     FilterPipe,
-    NvD3Component,
+    Ngd3Component
+
   ],
   providers: [Bookdetails , SearchService],
   bootstrap: []

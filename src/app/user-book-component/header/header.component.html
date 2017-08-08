@@ -5,8 +5,11 @@
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li><a href="#" (click)="onSelect('bookview')">BOOK VIEW</a> </li>
-        <li><a href="#" (click)="onSelect('bookdetails')">Upload</a></li>
+        <!-- works with ngif not with routing -->
+      <!--  <li><a href="#" (click)="onSelect('bookview')">BOOK VIEW</a> </li>
+        <li><a href="#" (click)="onSelect('bookdetails')">Upload</a></li>-->
+        <li><a routerLink="/view">BOOK View</a> </li>
+        <li><a routerLink="/upload">BOOK Upload</a> </li>
       </ul>
       <br>
       <ng-content></ng-content>
