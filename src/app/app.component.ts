@@ -19,7 +19,7 @@ export class AppComponent {
   loadedFeature= 'bookview';
 
   constructor(private bkservice: Bookdetails ) {
-    this.chartoption = {
+    this.options = {
       // Basic implementaion
       /*chart: { type: 'scatter' },
       title : { text : 'simple chart' },

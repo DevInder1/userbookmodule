@@ -1,8 +1,9 @@
-/*
+
 
 
 import { NgModule } from '@angular/core';
-import {BookModule} from "./book.module";
+import {BookModule} from './user-book-component/book.module';
+import { D3Component } from './d3/d3.component';
 import {AppComponent} from "./app.component";
 
 
@@ -12,7 +13,7 @@ import {AppComponent} from "./app.component";
 
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [D3Component],
   imports: [
     BookModule
   ],
@@ -21,4 +22,4 @@ import {AppComponent} from "./app.component";
 })
 export class AppModule { }
 
-*/
+
